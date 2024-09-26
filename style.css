@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header section starts */
+
+header {
+  /* Set diplay to flex in vertical direction */
+  display: flex;
+  flex-direction: column;
+  /* Sets content to center */
+  align-items: center;
+  justify-content: center;
+  /* Added padding and bg image */
+  padding: 7%;
+  padding-top: 3%;
+  background-image: url("./images/background.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+h1 {
+  /* Styled text and added padding */
+  font-family: "tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 90px;
+  color: #000000;
+  text-shadow: 2px 2px 5px black;
+  padding: 4%;
+}
+
+header p {
+  /* Styled text, added padding & border with border radius */
+  font-family: "EB Garamond", system-ui;
+  font-size: larger;
+  font-style: normal;
+  margin: 2%;
+  padding: 3%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+nav {
+  /* Positioned nav to top right corner */
+  position: absolute;
+  top: 0;
+  right: 100px;
+}
+
+ul {
+  /* Set display to flex and styled text */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "EB Garamond", system-ui;
+  font-size: larger;
+  font-style: normal;
+  list-style: none;
+}
+
+ul li {
+  /* Added margin & padding */
+  margin: 2%;
+  padding: 3%;
+}
+
+ul li a {
+  /* Styled text */
+  font-family: "Playfair Display", system-ui;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  color: #000000;
+}
+
+ul li a:hover {
+  /* Added hover effect of shadow */
+  text-shadow: 1px 1px 5px #ffffff;
+}
+
+/* Main section starts */
+
+#registration {
+  /* set display to flex & added bg image */
+  display: flex;
+  background-image: url("./images/7777777.jpg");
+}
+
+#reg {
+  /* Adjusted width & height  */
+  width: 100%;
+  height: 100vh;
+}
+
+.sec1 {
+  /* added width & height, border, margin & padding, changed bg color */
+  width: 50%;
+  height: 80%;
+  margin: 6% auto;
+  padding: 5%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px #d0e2f3;
+  background-color: #344f558f;
+  color: #ffffff;
+}
+
+.sec1 h2 {
+  /* styled text & aligned it */
+  font-family: "Playfair Display", system-ui;
+  font-size: 30px;
+  font-weight: weight;
+  font-style: normal;
+  text-shadow: 1px 1px 5px #161414a1;
+  text-align: center;
+}
+
+#form {
+  /* set display to flex, added some padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5%;
+}
+
+label {
+  /* styled text & added margin */
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  margin: 2%;
+}
+
+input {
+  /* added width, bg color,margin & padding, also added box shadow */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 3px 3px;
+  margin: 1%;
+  padding: 1%;
+  width: 300px;
+}
+
+input:hover {
+  /* added bg color & a pointer to cursor over hover effect */
+  background-color: #fdfccc;
+  cursor: pointer;
+}
+
+textarea {
+  /* added bg color, box shadow,margin & padding */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 2px 2px;
+  margin: 1%;
+  padding: 1%;
+  width: 300px;
+}
+
+textarea:hover {
+  /* added bg color & a pointer to cursor over hover effect */
+  background-color: #fdfccc;
+  cursor: pointer;
+}
+
+#submit {
+  /* styled text */
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  /* added border radius, bg color, some margin & padding */
+  border-radius: 50px;
+  background-color: #e0b9a2;
+  margin: 5%;
+  padding: 3%;
+}
+
+#submit:hover {
+  /* added bg color & a pointer to cursor over hover effect */
+  background-color: #abc4ff;
+  cursor: pointer;
+}
+
+#regimg {
+  /* added box shadow */
+  box-shadow: 5px 5px 10px slategray;
+}
+
+.editbtn {
+  /* Styled text */
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  /* added border radius, bg color, some margin & padding & set opacity to 0 to hide it at start */
+  border-radius: 50px;
+  background-color: #e0b9a2;
+  margin: 5%;
+  padding: 3%;
+  opacity: 0;
+}
+
+.editbtn:hover {
+  /* added bg color & a pointer to cursor over hover effect */
+  background-color: #abc4ff;
+  cursor: pointer;
+}
+
+.sec2 {
+  /* aligned items to center & added padding & width */
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  width: 100%;
+}
+
+.sec2 h2 {
+  /* styled text, added margin & padding */
+  font-family: "Playfair Display", system-ui;
+  font-size: 40px;
+  font-weight: weight;
+  font-style: normal;
+  color: #131311;
+  margin: 5%;
+  margin-top: 0;
+  padding: 3%;
+}
+
+#regstudents {
+  /* set display to grid & added 8 columns */
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  /* added border, box shadow & bg color gradient */
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px grey;
+  padding: 20px;
+  background: linear-gradient(90deg, #dfc699 15%, #c08f44 50%, #dfc699 85%);
+}
+
+#info {
+  /* set width & height, added border & padding, hidded overflow at start */
+  width: auto;
+  max-height: 200px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-x: hidden;
+}
+
+#addScrollbarBtn {
+  /* styled text, border, margin & padding & bg color */
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  border: 1px solid #dfc699;
+  border-radius: 50px;
+  background-color: #dfc699;
+  padding: 1%;
+  margin: 1%;
+}
+
+.infoDiv {
+  /* set display to grid with 8 columns & centered items */
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  /* added border, box shadow & bg color gradient & padding */
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px grey;
+  padding: 20px;
+  background: linear-gradient(90deg, #dfc699 15%, #c08f44 50%, #dfc699 85%);
+}
+
+.infoDiv p {
+  /* styled text & added margin */
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  margin: 2%;
+}
+
+.infoDiv button {
+  /* styled text, added border,bg color & padding */
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  border: 1px solid #dfc699;
+  border-radius: 50px;
+  background-color: #dfc699;
+  padding: 5%;
+}
+
+#regstudents p {
+  /* styled text and added margin */
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  margin: 2%;
+}
+
+/* footer section starts */
+
+footer {
+  /* added padding, bg color & border on top */
+  padding: 1%;
+  background-color: slategrey;
+  border-top: 1px solid black;
+}

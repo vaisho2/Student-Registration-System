@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Added meta tags-->
+    <meta name="author" content="Vaishnavi" />
+    <meta name="keywords" content="DOM JS Assignment" />
+    <meta name="description" content="Student Registration System" />
+    <!-- Linked CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Linked different font families -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Parisienne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tangerine:wght@400;700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- Linked fav icons -->
+    <script src="https://kit.fontawesome.com/698b0d49df.js" crossorigin="anonymous"></script>
+    <title>Student Registration System</title>
+  </head>
+  <body>
+    <!-- Header section with nav bar, title, description para -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#form">REGISTER</a></li>
+          <li><a href="#regstudents">STUDENTS</a></li>
+        </ul>
+      </nav>
+      <h1>Student Registration System</h1>
+      <p>
+        The Student Registration System is a user-friendly web application
+        designed to streamline the process of managing student records. Built to
+        allow students to register their personal details such as name, class,
+        address, and contact number, this system simplifies the process of
+        tracking and updating information. The platform also offers convenient
+        functionalities for editing and deleting student records, ensuring that
+        data remains accurate and up-to-date. With a focus on ease of use and
+        efficiency, this system is perfect for educational institutions looking
+        to manage student data effectively.
+      </p>
+    </header>
+    <!-- Main section - Registration Form & Registered students list -->
+    <main>
+      <article id="registration">
+        <article id="reg">
+          <section class="sec1">
+            <div>
+              <h2>Student Registration Form</h2>
+            <!-- Registration form -->
+            <form id="form">
+              <label for="studentname">Enter Student Name :</label>
+              <input type="text" id="studentname" name="StudentName" placeholder="Enter Full Name" pattern="[A-Za-z]" title="Only letters are allowed" required/>
+              <span id="name-error" style="color:pink;"></span>
+              <br>
+              <label for="studentid">Enter Student Id :</label>
+              <input type="number" id="studentid" name="StudentId" placeholder="Enter Student Id" required/>
+              <span id="id-error" style="color:pink;"></span>
+              <br>
+              <label for="studentclass">Enter Student Class :</label>
+              <input type="number" id="studentclass" name="StudentClass" placeholder="Enter Student Class" required/>
+              <span id="class-error" style="color:pink;"></span>
+              <br>
+              <label for="address">Enter Address</label>
+              <textarea id="address" name="Address" placeholder="Enter Address" required></textarea>
+              <span id="add-error" style="color:pink;"></span>
+              <br>
+              <label for="email">Enter Email :</label>
+              <input type="email" id="email" name="Email" placeholder="Enter Email Id" required/>
+              <span id="email-error" style="color:pink;"></span>
+              <br>
+              <label for="phone">Enter Contact Number :</label>
+              <input type="tel" id="phone" name="Contact" placeholder="Enter Contact Number" pattern="[0-9]{10}" title="Enter a valid 10-digit phone number" required/>
+              <span id="phone-error" style="color:pink;"></span>
+              <br>
+              <button id="submit">Submit</button>
+              <button id="submit-edit">Submit</button>
+            </form>
+            </div>
+          </section>
+        </article>
+        <!-- Registered Student List -->
+        <section class="sec2">
+          <h2>Registered Students :</h2>
+          <!-- Header row -->
+          <div id="regstudents">
+              <p>Student Name</p>
+              <p>Id</p>
+              <p>Class</p>
+              <p>Address</p>
+              <p>Email Id</p>
+              <p>Contact</p>
+          </div>
+          <!-- Section for inserted inputs by user -->
+          <div id="info"></div>
+        </section>
+      </article>
+    </main>
+    <!-- Footer section -->
+    <footer>
+      <section class="box" id="copyright">
+        <p>&copy; 2024 Students Registration System. All rights reserved.</p>
+  </footer>
+      <!-- Linked JS file -->
+      <script src="script.js"></script>
+    </body>
+</html>
